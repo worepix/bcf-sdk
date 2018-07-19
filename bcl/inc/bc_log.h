@@ -75,6 +75,8 @@ void bc_log_warning(const char *format, ...);
 
 void bc_log_error(const char *format, ...);
 
+void bc_log_dump(void *buffer, size_t length, const char *format, ...);
+
 #else
 
 #define bc_log_init(...)
@@ -82,6 +84,7 @@ void bc_log_error(const char *format, ...);
 #define bc_log_info(...)
 #define bc_log_warning(...)
 #define bc_log_error(...)
+#define bc_log_dump(...)
 
 #endif
 

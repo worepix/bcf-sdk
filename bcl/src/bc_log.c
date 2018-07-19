@@ -75,6 +75,39 @@ void bc_log_error(const char *format, ...)
     va_end(ap);
 }
 
+void bc_log_dump(void *buffer, size_t length, const char *format, ...)
+{
+    va_list ap;
+
+    va_start(ap, format);
+    _bc_log_message(BC_LOG_LEVEL_DEBUG, 'D', format, ap);
+    va_end(ap);
+
+    strcpy(_bc_log.buffer, "# <DUMP> ");
+
+    size_t offset = 9;
+
+    for (size_t i = 0; i < length; i++)
+    {
+        offset += sprintf(_bc_log.buffer + offset, "%02X, ", ((uint8_t *) buffer)[i]);
+
+        if (i % 16 == 15)
+        {
+            _bc_log.buffer[offset - 2] = '\r';
+            _bc_log.buffer[offset - 1] = '\n';
+
+            bc_uart_write(BC_UART_UART2, _bc_log.buffer, offset);
+
+            offset = 9;
+        }
+    }
+
+    _bc_log.buffer[offset - 2] = '\r';
+    _bc_log.buffer[offset - 1] = '\n';
+
+    bc_uart_write(BC_UART_UART2, _bc_log.buffer, offset);
+}
+
 static void _bc_log_message(bc_log_level_t level, char id, const char *format, va_list ap)
 {
     if (!_bc_log.initialized)
@@ -87,36 +120,41 @@ static void _bc_log_message(bc_log_level_t level, char id, const char *format, v
         return;
     }
 
-    bc_tick_t tick_now = bc_tick_get();
+    size_t offset;
 
     if (_bc_log.timestamp == BC_LOG_TIMESTAMP_ABS)
     {
+        bc_tick_t tick_now = bc_tick_get();
+
         uint32_t timestamp_abs = tick_now / 10;
 
-        sprintf(_bc_log.buffer, "# %lu.%02lu <%c> ", timestamp_abs / 100, timestamp_abs % 100, id);
+        offset = sprintf(_bc_log.buffer, "# %lu.%02lu <%c> ", timestamp_abs / 100, timestamp_abs % 100, id);
     }
     else if (_bc_log.timestamp == BC_LOG_TIMESTAMP_REL)
     {
+        bc_tick_t tick_now = bc_tick_get();
+
         uint32_t timestamp_rel = (tick_now - _bc_log.tick_last) / 10;
 
-        sprintf(_bc_log.buffer, "# +%lu.%02lu <%c> ", timestamp_rel / 100, timestamp_rel % 100, id);
+        offset = sprintf(_bc_log.buffer, "# +%lu.%02lu <%c> ", timestamp_rel / 100, timestamp_rel % 100, id);
+
+        _bc_log.tick_last = tick_now;
     }
     else
     {
         strcpy(_bc_log.buffer, "# <!> ");
 
         _bc_log.buffer[3] = id;
+
+        offset = 6;
     }
 
-    _bc_log.tick_last = tick_now;
+    offset += vsnprintf(&_bc_log.buffer[offset], sizeof(_bc_log.buffer) - offset - 3, format, ap);
 
-    size_t offset = strlen(_bc_log.buffer);
+    _bc_log.buffer[offset++] = '\r';
+    _bc_log.buffer[offset++] = '\n';
 
-    vsnprintf(&_bc_log.buffer[offset], sizeof(_bc_log.buffer) - offset - 3, format, ap);
-
-    strcat(_bc_log.buffer, "\r\n");
-
-    bc_uart_write(BC_UART_UART2, _bc_log.buffer, strlen(_bc_log.buffer));
+    bc_uart_write(BC_UART_UART2, _bc_log.buffer, offset);
 }
 
 #endif
