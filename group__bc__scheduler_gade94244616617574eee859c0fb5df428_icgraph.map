@@ -1,0 +1,48 @@
+<map id="bc_scheduler_plan_absolute" name="bc_scheduler_plan_absolute">
+<area shape="rect" id="node2" href="$group__bc__analog__sensor.html#gacc77d116a804b40e75c061c6f98f3024" title="Set measurement interval. " alt="" coords="255,5,407,46"/>
+<area shape="rect" id="node3" href="$group__bc__cy8cmbr3102.html#ga385a73624d11078537b52f5fb95c1b65" title="Set scan interval. " alt="" coords="257,70,404,111"/>
+<area shape="rect" id="node4" href="$group__bc__flood__detector.html#ga552c8426d547495abfa719ebf431b81c" title="Set measurement interval. " alt="" coords="255,135,406,177"/>
+<area shape="rect" id="node5" href="$group__bc__hc__sr04.html#gae3474f228cb54344795860617db1dc66" title="Set measurement interval. " alt="" coords="251,201,411,242"/>
+<area shape="rect" id="node6" href="$group__bc__hdc2080.html#gad0ea1a0ab194f6adbc099d2181ac1429" title="Start measurement manually. " alt="" coords="256,368,405,395"/>
+<area shape="rect" id="node7" href="$group__bc__hdc2080.html#gaa4cf9c164b7a2dde482968d8b4967ef5" title="Set measurement interval. " alt="" coords="484,233,647,274"/>
+<area shape="rect" id="node10" href="$group__bc__hts221.html#gafa29ed60b0ecc2dd20fc644b7297d594" title="Start measurement manually. " alt="" coords="261,419,400,445"/>
+<area shape="rect" id="node11" href="$group__bc__hts221.html#ga38dbc73766d61578e16fa8030e54c866" title="Set measurement interval. " alt="" coords="489,298,642,339"/>
+<area shape="rect" id="node12" href="$group__bc__lis2dh12.html#gadbd2d03f7d812d178f3b7db2933ebc8c" title="Set measurement interval. " alt="" coords="249,979,412,1021"/>
+<area shape="rect" id="node13" href="$group__bc__lp8.html#gae399e4f224010a0faf68c69d9298244e" title="Set measurement interval. " alt="" coords="241,1045,421,1072"/>
+<area shape="rect" id="node15" href="$group__bc__module__battery.html#ga16a69bc3476362c1acc6b229f9beb966" title="Set update interval. " alt="" coords="252,1097,409,1138"/>
+<area shape="rect" id="node16" href="$group__bc__module__infra__grid.html#gae83ee8fb7e13721ed8f994191c94eb9e" title="Start measurement manually. " alt="" coords="258,1162,403,1203"/>
+<area shape="rect" id="node17" href="$group__bc__module__infra__grid.html#gab26e81f7f3cb652eb225e9db3b6f7269" title="Set measurement interval. " alt="" coords="493,1303,638,1345"/>
+<area shape="rect" id="node18" href="$group__bc__mpl3115a2.html#ga567ddfa6b0f91562a24068b943c2f014" title="Start measurement manually. " alt="" coords="249,675,412,701"/>
+<area shape="rect" id="node21" href="$group__bc__mpl3115a2.html#gaa976e072fb109951e3d170400a216bf7" title="Set measurement interval. " alt="" coords="477,729,654,770"/>
+<area shape="rect" id="node26" href="$group__bc__opt3001.html#ga1f1324d720205062e98fff2b118957d7" title="Start measurement manually. " alt="" coords="257,827,404,853"/>
+<area shape="rect" id="node28" href="$group__bc__opt3001.html#gaff0e45c5bd37a1686e3b32e5ffba839f" title="Set measurement interval. " alt="" coords="485,859,645,901"/>
+<area shape="rect" id="node32" href="$group__bc__pulse__counter.html#gac725cd2d1e744dcd8d0b994e4fa6ae7d" title="Set update interval. " alt="" coords="256,1279,405,1321"/>
+<area shape="rect" id="node33" href="$group__bc__sgp30.html#ga7b0db725da84f71905fb636c9b2911c9" title="Set measurement interval. " alt="" coords="256,1345,405,1386"/>
+<area shape="rect" id="node34" href="$group__bc__sht20.html#gaa9386718491799a11cee168b2759d6b3" title="Start measurement manually. " alt="" coords="265,621,397,648"/>
+<area shape="rect" id="node36" href="$group__bc__sht20.html#ga24e0c92dae36a02052180a2ee527c743" title="Set measurement interval. " alt="" coords="492,481,639,522"/>
+<area shape="rect" id="node38" href="$group__bc__sht30.html#gacabf38a843279a9d30051045bb823420" title="Start measurement manually. " alt="" coords="265,469,397,496"/>
+<area shape="rect" id="node39" href="$group__bc__sht30.html#ga76e7a95ad2752d3868ffd07ab1327d01" title="Set measurement interval. " alt="" coords="492,415,639,457"/>
+<area shape="rect" id="node40" href="$group__bc__spirit.html#ga18bd2ba84c0f7a735638d8aa01141cff" title="Set TX timeout. " alt="" coords="245,1411,416,1437"/>
+<area shape="rect" id="node41" href="$group__bc__tmp112.html#ga80fd7dd719e8fd97dcb84d846a4b7249" title="Start measurement manually. " alt="" coords="259,928,402,955"/>
+<area shape="rect" id="node44" href="$group__bc__tmp112.html#gaab18b8b8625b2d4d4272f4c0b6666153" title="Set measurement interval. " alt="" coords="487,1042,644,1083"/>
+<area shape="rect" id="node47" href="$group__bc__uart.html#gacfd1c9b17dcdec2f5036b33031849b45" title="Add data to be transmited in async mode. " alt="" coords="259,1461,402,1488"/>
+<area shape="rect" id="node9" href="$group__bc__tag__humidity.html#gae7552f9c868715b23444a97a3ab089b6" title="Start measurement manually. " alt="" coords="478,364,653,391"/>
+<area shape="rect" id="node8" href="$group__bc__tag__humidity.html#gadf6b5e8fea087785e8f54acc680e1e00" title="Set measurement interval. " alt="" coords="737,357,879,398"/>
+<area shape="rect" id="node14" href="$group__bc__module__co2.html#ga9619f5f2db2d1463584a433c959694b1" title="Set measurement interval. " alt="" coords="473,1238,657,1279"/>
+<area shape="rect" id="node19" href="$group__bc__module__climate.html#ga519b949e008cb2b0693921e5e189f88c" title="Start measurement of all sensors manually. " alt="" coords="470,794,661,835"/>
+<area shape="rect" id="node20" href="$group__bc__module__climate.html#ga5f3d9ab7344090715710836932f935cc" title="Start barometer measurement manually. " alt="" coords="470,611,661,653"/>
+<area shape="rect" id="node25" href="$group__bc__tag__barometer.html#gac8ce09d6257855e883c044e541f94416" title="Start measurement manually. " alt="" coords="474,677,657,704"/>
+<area shape="rect" id="node22" href="$group__bc__module__climate.html#gacbc9b29ec0f48a866775f6c3c5469c9a" title="Set measurement interval for all sensors. " alt="" coords="729,787,887,843"/>
+<area shape="rect" id="node23" href="$group__bc__module__climate.html#gaa95b5a8f2cab1f762ef4c3e2fe81ddbf" title="Set measurement interval for barometer. " alt="" coords="717,722,899,763"/>
+<area shape="rect" id="node24" href="$group__bc__tag__barometer.html#ga4a21af19a5c181dce2c99f12b5430d08" title="Set measurement interval. " alt="" coords="733,657,883,698"/>
+<area shape="rect" id="node27" href="$group__bc__module__climate.html#gad777b83ca8cbdd1b88be7683b88f5ae9" title="Start lux meter measurement manually. " alt="" coords="470,925,661,966"/>
+<area shape="rect" id="node31" href="$group__bc__tag__lux__meter.html#ga158eb4b54798b05afc84bb3219bcc405" title="Start measurement manually. " alt="" coords="474,991,657,1017"/>
+<area shape="rect" id="node29" href="$group__bc__module__climate.html#gaa87b6865ee74fecf686c412704290d9e" title="Set measurement interval for lux meter. " alt="" coords="717,931,899,973"/>
+<area shape="rect" id="node30" href="$group__bc__tag__lux__meter.html#gac1ade8c7b8759d6a93e4d4263271967b" title="Set measurement interval. " alt="" coords="733,866,883,907"/>
+<area shape="rect" id="node35" href="$group__bc__module__climate.html#gacbf2a99d86cb50597fb82f57af0d4b4b" title="Start hygrometer measurement manually. " alt="" coords="470,546,661,587"/>
+<area shape="rect" id="node37" href="$group__bc__module__climate.html#gadeae01284064a2e05b7d7c82ff40a5be" title="Set measurement interval for hygrometer. " alt="" coords="713,481,903,522"/>
+<area shape="rect" id="node42" href="$group__bc__module__climate.html#ga0628e1ff9de7501ad2b0d9f32f2387fd" title="Start thermometer measurement manually. " alt="" coords="470,1107,661,1149"/>
+<area shape="rect" id="node43" href="$group__bc__tag__temperature.html#gae0a5c1b81710e7ec579ad86b3cd1db2a" title="Start measurement manually. " alt="" coords="497,1173,634,1214"/>
+<area shape="rect" id="node45" href="$group__bc__module__climate.html#gad9f6b5a60403e86ac3e20ec350789a22" title="Set measurement interval for thermometer. " alt="" coords="709,1085,907,1126"/>
+<area shape="rect" id="node46" href="$group__bc__tag__temperature.html#ga4be4786f6804ac04a6b6519fac9328f0" title="Set measurement interval. " alt="" coords="737,1019,879,1061"/>
+</map>
